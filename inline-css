@@ -1,0 +1,66 @@
+import React from "react";
+
+function App() {
+  const headerStyle = {
+    color: "green",
+    backgroundColor: "skyblue",
+    fontFamily: "Arial",
+    padding: "10px",
+    textAlign: "center",
+  };
+
+  const formStyle = {
+    backgroundColor: "white",
+    padding: "20px",
+    width: "300px",
+    margin: "20px auto",
+    borderRadius: "10px",
+    fontFamily: "Arial",
+  };
+
+  const inputStyle = {
+    width: "100%",
+    padding: "8px",
+    marginTop: "5px",
+    marginBottom: "10px",
+  };
+
+  const buttonStyle = {
+    backgroundColor: "blue",
+    color: "white",
+    padding: "10px",
+    border: "none",
+    cursor: "pointer",
+    width: "100%",
+    margin: "20px",
+  };
+
+  return (
+    <div>
+      <h1 style={headerStyle}>Student Details</h1>
+
+      <div style={formStyle}>
+        <label>Name</label>
+        <input type="text" style={inputStyle}></input>
+
+        <label>Email</label>
+        <input type="email" style={inputStyle}></input>
+
+        <label>Age</label>
+        <input type="age" style={inputStyle}></input>
+
+        <label>Gender</label>
+        <select style={buttonStyle}>
+    
+          <option>Male</option>
+          <option>FeMale</option>
+          <option>Others</option>
+        </select>
+
+        <button style={buttonStyle}>Submit</button>
+      </div>
+    </div>
+  );
+}
+
+export default App;

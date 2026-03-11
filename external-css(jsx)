@@ -1,0 +1,32 @@
+import React from "react";
+import "./App.css";
+
+function App() {
+  return (
+    <div>
+      <header className="header">
+        <h1>Technology News</h1>
+      </header>
+
+      <article className="article-card">
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+          alt="technology"
+          className="article-image"
+        />
+
+        <h2 className="article-tittle">Artifical Inteligance In HealthCare</h2>
+
+        <p className="article-text">
+          Artificial Intelligence is transforming healthcare by helping doctors
+          diagnose diseases faster, improving medical imaging, and supporting
+          personalized treatments.
+        </p>
+        
+        <button className="read-btn">Read More</button>
+      </article>
+    </div>
+  );
+}
+
+export default App;
